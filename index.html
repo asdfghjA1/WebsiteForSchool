@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main</title>
+	<link rel="stylesheet" href="./dts.css" />
+</head>
+<body>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+	<section>
+		<div id="main">
+			<div id="box1"></div>
+
+			<div id="box2">
+				<div id="text">
+					<!-- DARE<br>TO <br>EXCEL -->
+					<h1 class="hhj">NAMDANG</h1>
+					<p>
+					The Namdang house upholds its motto “Dare to Excel” <br> in innumerable ways possible, but throughout we only <br> believe in the process of excelling. The house does not strive to <br> create perfection out of the children it fosters, but to improve the self <br> they are today into being somebody better. This process requires <br> tenacity and dedication which can be seen brimming in the eyes of <br> every student from Namdang. The burning desire to give their best <br> in everything is what unites the house, and they are aware that <br> together they can scale any mountain of difficulty that life throws at them.
+				</p>
+				</div>
+			</div>
+			
+			<div id="box3">
+				<div id="container">
+					<div id="logo">
+						<img src="ll.jpg"/>
+				</div>
+				<div id="menu">
+					<ul>
+						<div class="container">
+						<li> <button type="button" class="btn" onclick="document.location='#'">HOME</button></li>
+						<div class="dropdown">
+							<button onclick="myFunction()" class="dropbtn">Our Pursuits</button>
+							<div id="myDropdown" class="dropdown-content">
+							  <a href="./activity.html">Activities</a>
+							  <a href="./ddts.html">IMAGES</a>
+							  <a href="./sports.html">Sports</a>
+							  <a href="./acade.html">Academics</a>
+							</div>
+						  </div>
+						  <script>
+							  /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+						  </script>
+						<!-- <li><button type="button" class="btn"  onclick="document.location='./ddts.html' " >IMAGES</button></li> -->
+						<li><button type="button" class="btn1" onclick="document.location='./abtus.html' " >About Us</button></li>
+						<!-- <li><button type="button" class="btn1" onclick="document.location='./activity.html' " >Activities</button></li> -->
+
+						<li> <button type="button" class="btn" onclick="window.location.href='https://www.assamvalleyschool.com/';">AVS</button></li>
+					</div>
+					</ul>
+					</div>
+				</section>
+	
+</body>
+</html>
